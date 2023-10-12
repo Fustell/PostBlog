@@ -1,0 +1,22 @@
+{
+  "name": "post_blog",
+  "version": "1.0.0",
+  "description": "A web application where users can create posts",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fustell/PostBlog.git"
+  },
+  "author": "Roman Dykyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fustell/PostBlog/issues"
+  },
+  "homepage": "https://github.com/Fustell/PostBlog#readme",
+  "dependencies": {
+    "express.js": "^1.0.0"
+  }
+}
