@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Редагувати пост</title>
+</head>
+<body>
+    <form action="" method="POST">
+        <label for="title">Заголовок:</label>
+        <input type="text" id="title" name="title" value="<%=post.title %>"><br><br>
+      
+        <label for="description">Опис:</label>
+        <textarea id="description" name="description" rows="4" cols="50" required><%=post.description %></textarea><br><br>
+      
+        <label for="author">Автор:</label>
+        <input type="text" id="author" name="author" value="<%=post.author %>"><br><br>
+      
+        <input type="submit" value="Надіслати">
+      </form>
+</body>
+</html>

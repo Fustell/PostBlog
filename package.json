@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/Fustell/PostBlog#readme",
   "dependencies": {
-    "express.js": "^1.0.0"
+    "ejs": "^3.1.9",
+    "express.js": "^1.0.0",
+    "mongoose": "^7.6.2",
+    "nodemon": "^3.0.1"
   }
 }
