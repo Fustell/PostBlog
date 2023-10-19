@@ -12,8 +12,8 @@
 </head>
 <body>
     <ul class="nav-menu">
-        <li class="nav-item"><a href="/posts/create">Створити пост</a></li>
-        <li class="nav-item"><a href="/posts/getAllPosts">Всі пости</a></li>
+        <li class="nav-item"><a href="/create">Створити пост</a></li>
+        <li class="nav-item"><a href="/">Всі пости</a></li>
     </ul>
     <div class="container">
         <h1 class="post-title"><%=post.title %></h1>
@@ -26,8 +26,8 @@
             <p class="post-updated">Востанє відредагований: <%=date_updated%> </p>
           <% } else{ %><% } %>
         
-        <a class="button-link button-delete" href="/posts/delete/<%=post._id %>">Видалити пост</a>
-        <a class="button-link button-update" href="/posts/edit/<%=post._id %>">Редагувати пост</a>
+        <a class="button-link button-delete" href="/delete/<%=post._id %>">Видалити пост</a>
+        <a class="button-link button-update" href="/edit/<%=post._id %>">Редагувати пост</a>
     </div>
 </body>
 </html>
