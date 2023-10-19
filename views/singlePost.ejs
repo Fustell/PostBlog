@@ -24,7 +24,7 @@
         <p>Кількість переглядів: <%=post.views %></p>
         <% if(post.isUpdated){ %>
             <p class="post-updated">Востанє відредагований: <%=date_updated%> </p>
-          <% } else{ %><% } %>
+          <% }%>
         
         <a class="button-link button-delete" href="/delete/<%=post._id %>">Видалити пост</a>
         <a class="button-link button-update" href="/edit/<%=post._id %>">Редагувати пост</a>

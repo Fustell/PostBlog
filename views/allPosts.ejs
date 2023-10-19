@@ -23,6 +23,9 @@
                 <a class="button-link button-primary" href="/post/<%=posts[i]._id %>">Переглянути</a>
             </div>
         <%} %>
+        <% if(posts.length == 0){ %>
+            <p class="posts-absent">Нема постів :( </p>
+          <% }%>
     </div>
 </body>
 </html>

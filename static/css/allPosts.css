@@ -18,3 +18,9 @@
     font-size: 14px !important;
     color: #777;
 }
+
+.posts-absent{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
