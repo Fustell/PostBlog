@@ -19,8 +19,8 @@
         <h1 class="post-title"><%=post.title %></h1>
         <p class="post-meta">Автор: <%=post.author %> | Дата: <%=date_created %></p>
         <div class="post-content">
-            <p><%=post.description %></p>
-        </div>
+            <%=post.description %>
+        </div><br>
         <p>Кількість переглядів: <%=post.views %></p>
         <% if(post.isUpdated){ %>
             <p class="post-updated">Востанє відредагований: <%=date_updated%> </p>
