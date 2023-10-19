@@ -10,6 +10,7 @@ const postsRouter = require("./routes/postRouter.js");
 
 const PORT = process.env.PORT || 3000
 
+app.set('views', __dirname + '/templates');
 app.set("view engine", "ejs");
 
 app.use(express.urlencoded({ extended: false }));
