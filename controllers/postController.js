@@ -17,9 +17,7 @@ async function createPost (request, response){
         }
     }
     else{
-        response.render("createPost", {
-            title: "Створення",
-        });
+        response.render("createPost");
     }
 };
 
@@ -41,7 +39,7 @@ async function getPostById (request, response) {
         const updatedViews = await Post.findByIdAndUpdate(id,{views: post.views});
         let date_created = getReadableDate(post.date_created);
         let date_updated = getReadableDate(post.date_updated);
-        response.render("SinglePost", {
+        response.render("singlePost", {
             post,
             date_created,
             date_updated
