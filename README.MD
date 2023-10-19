@@ -4,15 +4,11 @@
  ## Installation
 
  1. Create .env file
- 2. Write URL to connect MongoDB(Example below)
+ 2. Write URL to connect MongoDB(necessary) and PORT(optional)
 ```
     URL = mongodb+srv://username:password@cluster0.2lqtjde.mongodb.net/?retryWrites=true&w=majority
 ```
- 3. Write PORT(Optional)
-```
-    PORT = 300
-```
-4. Then, install all necessary dependencies\
+4. Then, install all necessary dependencies
 ```
     npm install
 ```
