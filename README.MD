@@ -7,6 +7,7 @@
  2. Write URL to connect MongoDB(necessary) and PORT(optional)
 ```
     URL = mongodb+srv://username:password@cluster0.2lqtjde.mongodb.net/?retryWrites=true&w=majority
+    PORT = 3000
 ```
 4. Then, install all necessary dependencies
 ```
