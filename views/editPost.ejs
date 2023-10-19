@@ -3,20 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/general.css">
     <title>Редагувати пост</title>
 </head>
 <body>
-    <form action="" method="POST">
-        <label for="title">Заголовок:</label>
-        <input type="text" id="title" name="title" value="<%=post.title %>"><br><br>
-      
-        <label for="description">Опис:</label>
-        <textarea id="description" name="description" rows="4" cols="50" required><%=post.description %></textarea><br><br>
-      
-        <label for="author">Автор:</label>
-        <input type="text" id="author" name="author" value="<%=post.author %>"><br><br>
-      
-        <input type="submit" value="Надіслати">
-      </form>
+    <ul class="nav-menu">
+        <li class="nav-item"><a href="/posts/create">Створити пост</a></li>
+        <li class="nav-item"><a href="/posts/getAllPosts">Всі пости</a></li>
+    </ul>
+    <div class="container">
+        <form action="" method="POST">
+            <label for="title">Заголовок:</label>
+            <input type="text" id="title" name="title" value="<%=post.title %>"><br><br>
+          
+            <label for="description">Опис:</label>
+            <textarea id="description" name="description" rows="4" cols="50" required><%=post.description %></textarea><br><br>
+          
+            <label for="author">Автор:</label>
+            <input type="text" id="author" name="author" value="<%=post.author %>"><br><br>
+          
+            <button type="submit" class="button-link button-send">Надіслати</button>
+          </form>
+    </div>
 </body>
 </html>

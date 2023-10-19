@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/general.css">
+    <link rel="stylesheet" href="/static/css/createPost.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul class="nav-menu">
+        <li class="nav-item"><a href="/posts/create">Створити пост</a></li>
+        <li class="nav-item"><a href="/posts/getAllPosts">Всі пости</a></li>
+    </ul>
+    <div class="container">
+        <div class="inside-container">
+            <form action="" method="POST">
+                <label for="title">Заголовок:</label>
+                <input type="text" id="title" class="form-fields" name="title" required><br><br>
+                
+                <label for="author" id="author-label">Автор:</label>
+                <input type="text" id="author" name="author" class="form-fields" required><br><br>
+    
+                <label id="description-label" for="description">Опис:</label>
+                <textarea id="description" name="description" class="form-fields" rows="4" cols="50" required></textarea><br><br>
+    
+    
+                <button type="submit" class="button-link button-send">Надіслати</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
