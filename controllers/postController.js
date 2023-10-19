@@ -11,7 +11,7 @@ async function createPost (request, response){
         try {
             const post = new Post({title, description, author});
             const savingPost = post.save();
-            response.redirect("/posts/getAllPosts");
+            response.redirect("/post/"+post.id)
         } catch (error) {
             response.status(501).send("Error 501")
         }
@@ -64,7 +64,7 @@ async function updatePost(request, response) {
         {
             try {
                 const post = await Post.findByIdAndUpdate(id,{title, description, date_updated, isUpdated, author});          
-                response.redirect("/posts/post/"+id);
+                response.redirect("/post/"+id);
             } catch (error) {
                 response.send("Error 501")
             }
