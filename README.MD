@@ -15,6 +15,6 @@
 ```
 5. Run application
 ```
-    npx nodemon app.js
+    npm run prod
 ```
  
