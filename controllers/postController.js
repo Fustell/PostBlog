@@ -23,7 +23,7 @@ async function createPost (request, response){
 
 async function getAllPosts(request, response){
     try {
-        const posts = await Post.find({});
+        const posts = await Post.find({}).sort('-date_created');
         response.render("allPosts", {posts})
     } catch (error) {
         response.status(501).send("Error 501")
